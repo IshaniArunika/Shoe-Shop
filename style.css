@@ -1,0 +1,354 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color:   black;
+    color: white;
+    padding: 20px 50px;
+}
+.navtop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    padding:10px 20px ;
+    border-radius: 25px;
+    background-color: rgb(50, 49, 49);
+}
+.searchinput{
+    border: none;
+    background: transparent;
+}
+.searchinput:focus {
+    outline: none;
+}
+.navebottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.menuItems{
+    margin-right:50px ;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 100;
+}
+.menuItems:hover{
+    color: greenyellow;
+}
+.slider{
+    background: url("https://img.freepik.com/premium-vector/wood-abstract-texture-vector-backgrounds_42077-12422.jpg?w=996");
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 86%);
+}
+.sliderwrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1s ease-in-out;
+}
+.sliderItem{
+   width: 100vw; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+.slidBg{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+     
+}
+.sliderImg{
+    z-index: 1;
+}
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    right:60%;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+.sliderPrice{
+    position: absolute;
+    top: 25%;
+    right: 20%;
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+.buy{
+    position: absolute;
+    top: 65%;
+    right: 10%;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+    background: black;
+    z-index: 1;
+}
+.buy:hover{
+    background: white;
+    color: black;
+}
+.sliderItem:nth-child(1) .slidBg{
+    background-color: plum;
+}
+.sliderItem:nth-child(2) .slidBg{
+    background-color: #369e62;
+}
+.sliderItem:nth-child(3) .slidBg{
+    background-color: rgb(12, 218, 66);
+}
+.sliderItem:nth-child(4) .slidBg{
+    background-color: rgb(69, 64, 218);
+}
+.sliderItem:nth-child(5) .slidBg{
+    background-color: rgb(198, 221, 107);
+}
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+}
+
+.featureImg{
+    width: 50px;
+    height: 50px;
+}
+.featureTitle{
+   font-style: 20px;
+   font-weight: 600; 
+   margin: 20px;
+}
+.featureDescrip{
+    color: gray;
+    width: 50%;
+    height: 100px;
+
+}
+.product{
+    height: 100vh;
+    background-color: beige;
+    position: relative;
+     
+}
+.productImg{
+    width: 50%;
+}
+.proDetails{
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    width: 40%;
+    padding: 50px;
+}
+.ProTitle{
+    font-size: 75px;
+    font-weight: 900;
+
+}
+ 
+.proDesc{
+   font-style: 24px;
+   color: gray;
+
+}
+.sizes,.colors{
+    display: flex;
+    margin-bottom: 20px;
+}
+.color{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+.color:last-child{
+    background-color: darkblue;
+}
+.size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+
+
+}
+.proButton{
+    float: right;
+    padding: 1opx 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+}
+.proButton:hover{
+    background-color: white;
+    color: black;
+}
+
+.payment{
+     
+    width: 500px;
+    height: 640px;
+    background-color: rgb(221, 224, 247);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    flex-direction: column;
+    padding: 10px 40px;
+    box-shadow: 2px -1px 109px -13px rgba(0,0,0,0.81);
+    -webkit-box-shadow: 2px -1px 109px -13px rgba(0,0,0,0.81);
+    -moz-box-shadow: 2px -1px 109px -13px rgba(0,0,0,0.81);
+}
+.payTitle{
+    font-size: 20px;
+    color: gray
+
+}
+label{
+    font-size: 14px;
+    font-weight: 500;
+}
+.payInput{
+    width: 80%;
+    padding: 10px; 
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.payInput::placeholder{
+    color: rgb(103, 102, 102);
+}
+.C{
+    width: 25%;
+     
+}
+.cardInfor{
+    display: flex;
+    justify-content:space-between ; 
+}
+.payButton{
+    position: absolute;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(68, 68, 231);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+
+}
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: rgb(236, 91, 91);
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.gallery{
+    padding: 50px;
+    display: flex;
+     
+}
+.galleryItem{
+    flex: 1;
+    padding: 50px;
+}
+.galleryImage{
+    width: 300px;
+    height: 400px;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+.footerLeft{
+    flex:2;
+    display: flex;
+    justify-content:space-between ;
+    padding: 50px;
+}
+.footerMenuTitle{
+    font-size: 16px;
+}
+.footerMenuList{
+    padding: 0%;
+    list-style: none;
+}
+.footerMenuItem{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.footerRight{
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+}
+.fInput{
+    padding: 5px;
+}
+.fbutton{
+    padding: 5px;
+    background-color: rgb(234, 82, 21);
+    color: white;
+}
+.fTcons{
+    display: flex;
+}
+.Icons{
+    width: 40px;
+    padding: 5px;
+    margin: 10px;
+}
+/*fill this later*/
+@media screen and (max-width:480px) {
+    
+}
